@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Game_Manager : MonoBehaviour
+public class Return_script : MonoBehaviour
 {
     void OnTriggerEnter(Collider other) // Returning Dice after falling into deadzone
     {
