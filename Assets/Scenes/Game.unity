@@ -1830,6 +1830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoleGame_Manager
   Confirm: {fileID: 0}
+  Ball: {fileID: 0}
   CurrentStage: 0
 --- !u!4 &872613054
 Transform:
@@ -2870,10 +2871,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1794139908}
   - {fileID: 100936370}
   - {fileID: 1235959195}
   - {fileID: 1072860594}
-  - {fileID: 1794139908}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537989310
@@ -4064,10 +4065,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hole_Script
   Spots:
+  - {fileID: 1794139908}
   - {fileID: 100936370}
   - {fileID: 1235959195}
   - {fileID: 1072860594}
-  - {fileID: 1794139908}
+  index: 0
   HGmanager: {fileID: 0}
 --- !u!1 &1964602097
 GameObject:

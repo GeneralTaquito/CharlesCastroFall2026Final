@@ -6,6 +6,7 @@ public class HoleGame_Manager : MonoBehaviour
 {
     private float timer;
     public TextMeshProUGUI Confirm;
+    public GameObject Ball;
 
     public Stages CurrentStage = Stages.None;
     public enum Stages
@@ -27,6 +28,7 @@ public class HoleGame_Manager : MonoBehaviour
         {
             CurrentStage = Stages.Stage1;
             Confirm.gameObject.SetActive(false);
+            Invoke(nameof(Spawner),2f);
         }
 
         switch (CurrentStage)
@@ -44,4 +46,12 @@ public class HoleGame_Manager : MonoBehaviour
                 break;
         }
     }
+
+
+    void Spawner()
+    {
+        
+    }
+
+
 }
